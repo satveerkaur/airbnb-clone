@@ -11,3 +11,72 @@ code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
 }
+body{
+  margin: 0;
+  padding: 0;
+  font-family: 'Poppins', sans-serif;
+}
+.grey{
+  color: #918E9B;
+}
+.bold{
+  font-weight: bold;
+}
+/*navbar */
+nav{
+  height: 120px;
+  box-shadow: 0.25em 0.25em 0.75em rgba(0,0,0,.2);
+  display: flex;
+  /* justify-content: center; */
+  align-items: center;
+}
+.logo{
+  height: 70px;
+  padding-left: 10px;
+}
+
+/*Photo grid section/ Hero*/
+
+section{
+  padding: 20px;
+}
+.hero{
+  display: flex;
+  flex-direction: column;
+}
+/* .photogrid{
+  max-width: 400px;
+} */
+.photogrid{
+  width: 70vw;
+  padding-top: 10px;
+}
+.hero__grid{
+  display: flex;
+  justify-content: center;
+} 
+.hero__content{
+  padding-left: 100px;
+
+}
+.hero__content>h2{
+  margin-bottom: 16px;
+}
+.hero__content>p{
+  margin-top: 0;
+}
+
+/*Card */
+.card1{
+  width: 175px;
+  font-size: 12px;
+}
+.card1__img{
+  width: 100%;
+  border-radius: 9px;
+}
+.star{
+  width: 15px;
+  padding-right: 10px;
+}
+ 

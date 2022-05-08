@@ -1,23 +1,25 @@
 import logo from './logo.svg';
-import './App.css';
+import './index.css';
+import Navbar from './components/Navbar'
+import Hero from './components/Hero';
+import Card from './components/Card'
+import card1 from './images/katie-zaferes.png'
+// import star from './images/star.png'
 
 function App() {
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      <Navbar/>
+      <Hero/>
+      <Card
+        img ={card1}
+        star ="star.png"
+        rating="5.0"
+        reviews={6}
+        country="USA"
+        title="Life lessons with Kaite Zaferes"
+        price={136}
+      />
     </div>
   );
 }
