@@ -11,13 +11,8 @@ function App() {
   const cards = data.map(item => {
       return (<Card
       key={item.id}
-      img ={item.coverImg}
-      rating={item.stats.rating}
-      reviews={item.stats.reviewCount}
-      location={item.location}
-      title={item.title}
-      price={item.price}
-      openSpots={item.openSpots}
+      // item={item}  //while using this props.item.property
+      {...item}  //this automatically created items like item.id, item.coverImg
       />
     )
   })
